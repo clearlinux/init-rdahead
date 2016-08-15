@@ -26,6 +26,7 @@ smalldebug:
 	$(CC) -o initra init-rdahead.c -Wall $(SMFLAGS) -DDEBUG
 
 install:
+	mkdir -p $(INSTALL_PATH)
 	cp initra $(INSTALL_PATH)
 
 clean:
