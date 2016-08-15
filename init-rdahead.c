@@ -52,12 +52,16 @@ static char *ra_fns[] = {
 	"/usr/lib64/libnss_resolve.so.2",
 	"/usr/lib64/libm.so.6",
 	"/usr/lib64/libutil.so.0",
+	"/usr/lib64/libpthread.so.0",
+	"/usr/lib64/libdl.so.2",
+	"/usr/lib64/libutil.so.1",
+	"/usr/lib64/libm.so.6",
+	"/var/cache/ldconfig/ld.so.cache",
 	"/usr/lib64/libc.so.6",
 	"/usr/lib64/libpthread.so.0",
 	"/usr/lib64/libdl.so.2",
 	"/usr/lib64/libutil.so.1",
 	"/usr/lib64/libm.so.6",
-	"/usr/lib64/libc.so.6",
 	"/usr/lib/python2.7/site.py",
 	"/usr/lib/python2.7/site.pyc",
 	"/usr/lib/python2.7/os.py",
@@ -97,10 +101,8 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/sre_constants.py",
 	"/usr/lib/python2.7/sre_constants.pyc",
 	"/usr/lib/python2.7/lib-dynload/_locale.so",
-	"/usr/lib/python2.7/lib-dynload/_locale.so",
 	"/usr/lib/python2.7/_sysconfigdata.py",
 	"/usr/lib/python2.7/_sysconfigdata.pyc",
-	"/usr/lib/python2.7/site-packages",
 	"/usr/lib/python2.7/encodings/__init__.py",
 	"/usr/lib/python2.7/encodings/__init__.pyc",
 	"/usr/lib/python2.7/codecs.py",
@@ -109,6 +111,7 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/encodings/aliases.pyc",
 	"/usr/lib/python2.7/encodings/ascii.py",
 	"/usr/lib/python2.7/encodings/ascii.pyc",
+	"/usr/bin/waagent",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/__init__.py",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/__init__.pyc",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/agent.py",
@@ -116,22 +119,16 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/subprocess.py",
 	"/usr/lib/python2.7/subprocess.pyc",
 	"/usr/lib/python2.7/lib-dynload/time.so",
-	"/usr/lib/python2.7/lib-dynload/time.so",
 	"/usr/share/zoneinfo/UTC",
 	"/usr/lib/python2.7/lib-dynload/select.so",
-	"/usr/lib/python2.7/lib-dynload/select.so",
-	"/usr/lib/python2.7/lib-dynload/fcntl.so",
 	"/usr/lib/python2.7/lib-dynload/fcntl.so",
 	"/usr/lib/python2.7/pickle.py",
 	"/usr/lib/python2.7/pickle.pyc",
 	"/usr/lib/python2.7/struct.py",
 	"/usr/lib/python2.7/struct.pyc",
 	"/usr/lib/python2.7/lib-dynload/_struct.so",
-	"/usr/lib/python2.7/lib-dynload/_struct.so",
-	"/usr/lib/python2.7/lib-dynload/binascii.so",
 	"/usr/lib/python2.7/lib-dynload/binascii.so",
 	"/usr/lib64/libz.so.1",
-	"/usr/lib/python2.7/lib-dynload/cStringIO.so",
 	"/usr/lib/python2.7/lib-dynload/cStringIO.so",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/metadata.py",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/metadata.pyc",
@@ -139,7 +136,6 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/platform.pyc",
 	"/usr/lib/python2.7/string.py",
 	"/usr/lib/python2.7/string.pyc",
-	"/usr/lib/python2.7/lib-dynload/strop.so",
 	"/usr/lib/python2.7/lib-dynload/strop.so",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/utils/__init__.py",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/utils/__init__.pyc",
@@ -152,38 +148,29 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/collections.py",
 	"/usr/lib/python2.7/collections.pyc",
 	"/usr/lib/python2.7/lib-dynload/_collections.so",
-	"/usr/lib/python2.7/lib-dynload/_collections.so",
-	"/usr/lib/python2.7/lib-dynload/operator.so",
 	"/usr/lib/python2.7/lib-dynload/operator.so",
 	"/usr/lib/python2.7/keyword.py",
 	"/usr/lib/python2.7/keyword.pyc",
 	"/usr/lib/python2.7/heapq.py",
 	"/usr/lib/python2.7/heapq.pyc",
 	"/usr/lib/python2.7/lib-dynload/itertools.so",
-	"/usr/lib/python2.7/lib-dynload/itertools.so",
 	"/usr/lib/python2.7/lib-dynload/_heapq.so",
-	"/usr/lib/python2.7/lib-dynload/_heapq.so",
-	"/usr/lib/python2.7/lib-dynload/grp.so",
 	"/usr/lib/python2.7/lib-dynload/grp.so",
 	"/usr/lib/python2.7/tempfile.py",
 	"/usr/lib/python2.7/tempfile.pyc",
 	"/usr/lib/python2.7/io.py",
 	"/usr/lib/python2.7/io.pyc",
 	"/usr/lib/python2.7/lib-dynload/_io.so",
-	"/usr/lib/python2.7/lib-dynload/_io.so",
 	"/usr/lib/python2.7/random.py",
 	"/usr/lib/python2.7/random.pyc",
 	"/usr/lib/python2.7/__future__.py",
 	"/usr/lib/python2.7/__future__.pyc",
 	"/usr/lib/python2.7/lib-dynload/math.so",
-	"/usr/lib/python2.7/lib-dynload/math.so",
 	"/usr/lib/python2.7/hashlib.py",
 	"/usr/lib/python2.7/hashlib.pyc",
 	"/usr/lib/python2.7/lib-dynload/_hashlib.so",
-	"/usr/lib/python2.7/lib-dynload/_hashlib.so",
 	"/usr/lib64/libssl.so.1.0.0",
 	"/usr/lib64/libcrypto.so.1.0.0",
-	"/usr/lib/python2.7/lib-dynload/_random.so",
 	"/usr/lib/python2.7/lib-dynload/_random.so",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/logger.py",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/logger.pyc",
@@ -192,16 +179,12 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/httplib.py",
 	"/usr/lib/python2.7/httplib.pyc",
 	"/usr/lib/python2.7/lib-dynload/array.so",
-	"/usr/lib/python2.7/lib-dynload/array.so",
 	"/usr/lib/python2.7/socket.py",
 	"/usr/lib/python2.7/socket.pyc",
-	"/usr/lib/python2.7/lib-dynload/_socket.so",
 	"/usr/lib/python2.7/lib-dynload/_socket.so",
 	"/usr/lib/python2.7/functools.py",
 	"/usr/lib/python2.7/functools.pyc",
 	"/usr/lib/python2.7/lib-dynload/_functools.so",
-	"/usr/lib/python2.7/lib-dynload/_functools.so",
-	"/usr/lib/python2.7/lib-dynload/_ssl.so",
 	"/usr/lib/python2.7/lib-dynload/_ssl.so",
 	"/usr/lib/python2.7/urlparse.py",
 	"/usr/lib/python2.7/urlparse.pyc",
@@ -218,10 +201,8 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/base64.py",
 	"/usr/lib/python2.7/base64.pyc",
 	"/usr/lib/python2.7/lib-dynload/datetime.so",
-	"/usr/lib/python2.7/lib-dynload/datetime.so",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/utils/textutil.py",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/utils/textutil.pyc",
-	"/usr/lib/python2.7/lib-dynload/crypt.so",
 	"/usr/lib/python2.7/lib-dynload/crypt.so",
 	"/usr/lib64/libcrypt.so.1",
 	"/usr/lib/python2.7/xml/__init__.py",
@@ -246,9 +227,6 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/distutils/__init__.pyc",
 	"/usr/lib/python2.7/distutils/version.py",
 	"/usr/lib/python2.7/distutils/version.pyc",
-	"/usr/lib64/libtinfo.so.6",
-	"/usr/lib64/libc.so.6",
-	"/usr/lib64/libc.so.6",
 	"/usr/lib/os-release",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/distro/__init__.py",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/distro/__init__.pyc",
@@ -280,7 +258,6 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/json/decoder.pyc",
 	"/usr/lib/python2.7/json/scanner.py",
 	"/usr/lib/python2.7/json/scanner.pyc",
-	"/usr/lib/python2.7/lib-dynload/_json.so",
 	"/usr/lib/python2.7/lib-dynload/_json.so",
 	"/usr/lib/python2.7/json/encoder.py",
 	"/usr/lib/python2.7/json/encoder.pyc",
@@ -330,7 +307,6 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/distro/default/extension.pyc",
 	"/usr/lib/python2.7/zipfile.py",
 	"/usr/lib/python2.7/zipfile.pyc",
-	"/usr/lib/python2.7/lib-dynload/zlib.so",
 	"/usr/lib/python2.7/lib-dynload/zlib.so",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/distro/default/deprovision.py",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/distro/default/deprovision.pyc",
@@ -386,35 +362,42 @@ static char *ra_fns[] = {
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/distro/freebsd/resourceDisk.pyc",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/distro/freebsd/osutil.py",
 	"/usr/lib/python2.7/site-packages/azurelinuxagent/distro/freebsd/osutil.pyc",
+	"/usr/share/defaults/waagent/waagent.conf",
 	NULL
 };
+
 
 int main(void)
 {
 	int i, fd;
 	struct stat st;
+
 	pid_t pid = fork();
 
 	if (pid == -1) {
 		DEBUG_PRINT("fork failed\n");
-		return 1;
+		execl("/usr/lib/systemd/systemd-bootchart", "systemd-bootchart", NULL);
 	} else if (pid > 0 ) {
 		execl("/usr/lib/systemd/systemd-bootchart", "systemd-bootchart", NULL);
 	} else {
 		usleep(10000);
 		DEBUG_PRINT("readahead files:\n");
-		for (i = 0; ra_fns[i] != NULL; i++) {
+		for (i = 0; ra_fns[i]; i++) {
 			DEBUG_PRINT("%s\n", ra_fns[i]);
 			fd = open(ra_fns[i], O_RDONLY);
-			if (!fd) {
+			if (fd < 0) {
 				DEBUG_PRINT("open failed to open %s\n", ra_fns[i]);
+				continue;
 			}
 			if (fstat(fd, &st) < 0) {
 				DEBUG_PRINT("fstat failed on %s\n", ra_fns[i]);
+				close(fd);
+				continue;
 			}
 			if (readahead(fd, 0, st.st_size) < 0) {
 				DEBUG_PRINT("readahead failure on %s: %s\n", ra_fns[i], strerror(errno));
 			}
+			close(fd);
 		}
 	}
 

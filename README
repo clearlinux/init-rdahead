@@ -1,0 +1,6 @@
+Read ahead boot files in hyper-v.
+
+Smallest footprint is to  : make smallmusl
+Make in debug mode        : make smallmusldebug
+If you don't have gcc-musl: make small
+If you don't want to strip: make initra

@@ -17,6 +17,9 @@ small:
 smallmusl:
 	$(MCC) -o initra init-rdahead.c -Wall $(SMFLAGS) -g
 
+smallmusldebug:
+	$(MCC) -o initra init-rdahead.c -Wall $(SMFLAGS) -g -DDEBUG
+
 smalldebug:
 	$(CC) -o initra init-rdahead.c -Wall $(SMFLAGS) -DDEBUG
 
