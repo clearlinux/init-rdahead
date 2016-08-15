@@ -1,6 +1,6 @@
 CC=gcc
 MCC=musl-gcc
-INSTALL_PATH?=/usr/bin
+INSTALL_PATH?=$(DESTDIR)/usr/bin
 SMFLAGS=-s -Os -fno-unwind-tables -fno-ident -fmerge-all-constants \
 	-fsingle-precision-constant -fshort-enums -ffunction-sections \
 	-static
