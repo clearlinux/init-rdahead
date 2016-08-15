@@ -18,7 +18,7 @@
 static char *ra_fns[] = {
 	"/usr/lib64/ld-2.23.so",
 	"/usr/lib/systemd/systemd-bootchart",
-	"/usr/lib64/libc-2.23.so",
+	"/usr/lib64/libc-2.24.so",
 	"/usr/lib64/libc.so.6",
 	"/usr/lib64/libgcc_s.so.1",
 	"/usr/lib/systemd/systemd",
