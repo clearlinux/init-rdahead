@@ -1,9 +1,11 @@
 CC=gcc
 MCC=musl-gcc
-INSTALL_PATH?=/usr/local/bin
+INSTALL_PATH?=$(DESTDIR)/usr/bin
 SMFLAGS=-s -Os -fno-unwind-tables -fno-ident -fmerge-all-constants \
 	-fsingle-precision-constant -fshort-enums -ffunction-sections \
 	-static
+
+all: smallmusl
 
 initra:
 	$(CC) -o initra init-rdahead.c -Wall
@@ -24,6 +26,7 @@ smalldebug:
 	$(CC) -o initra init-rdahead.c -Wall $(SMFLAGS) -DDEBUG
 
 install:
+	mkdir -p $(INSTALL_PATH)
 	cp initra $(INSTALL_PATH)
 
 clean:
